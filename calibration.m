@@ -42,17 +42,20 @@ figure(5);
         hold on; grid on;
     plot(spd05,fit_volt2,'b--');
 
-exp1=sprintf('The relation is: E^2 = %g(U^{0.5}) + %g',p(1),p(2));
-disp(exp1); 
+disp(sprintf('The relation is: E^2 = %g(U^{0.5}) + %g',p(1),p(2)));
 
 % Remap with original setup and speed
+
+
 figure(6);
     plot(set_volt_spd(2,:),set_volt_spd(3,:),'r-o');
         ylabel('wind speed m·s^{-1}');
         xlabel('voltage (V)');
         hold on; grid on;
     plot(set_volt_spd(2,:),((set_volt_spd(2,:).^2-p(2))/p(1)).^2,'b--');
-clear volt2 spd05 exp1 fit_volt2 ans;
+
+RSS=sum((((set_volt_spd(2,:).^2-p(2))/p(1)).^2-set_volt_spd(3,:)).^2);
+disp(sprintf('The RSS by kinglaw is: %g.',RSS));
 
 % Choose if the figures are displayed
 if figon~=1
