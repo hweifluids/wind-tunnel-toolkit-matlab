@@ -52,7 +52,6 @@ figure(6);
         xlabel('voltage (V)');
         hold on; grid on;
     plot(set_volt_spd(2,:),((set_volt_spd(2,:).^2-p(2))/p(1)).^2,'b--');
-
 clear volt2 spd05 exp1 fit_volt2 ans;
 
 % Choose if the figures are displayed
