@@ -17,5 +17,6 @@ figure(7);
     xlim([0 100]); 
     grid on; hold on;
     plot(set.Power, fit_velocity, 'b-o');
+    
 end
 
