@@ -11,7 +11,6 @@ pd = fitdist(timeseq, 'Normal');
 x_values = min(timeseq):0.01:max(timeseq);
 normal_pdf = pdf(pd, x_values);
 
-
 % Figure
 figure(4);
 tiledlayout(1,2) 
