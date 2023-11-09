@@ -34,4 +34,4 @@ Sorry for the trash-bin-liked function work-space.
 
 * <b><font color="green">ABSOLUTELY FREE</font></b> for use, modification, and distribution ! \^w\^
 * <b><font color="red">FORBIDDEN</font></b> for CA use, do it by yourself !
-* * <b><font color="green">Thank Ruijie HE for Markdown alignment.
+* <b><font color="green">Thank Ruijie HE for Markdown alignment.
